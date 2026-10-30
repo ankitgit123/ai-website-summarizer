@@ -41,7 +41,7 @@ AI-Website-Summarizer/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-website-summarizer.git
+git clone https://github.com/ankitgit123/ai-website-summarizer.git
 cd ai-website-summarizer
 ```
 

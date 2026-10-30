@@ -1,5 +1,6 @@
 
 import gradio as gr
+import os
 
 from summarizer import summarize_website
 
@@ -111,12 +112,6 @@ def run_summarizer(url, personality):
 
 
 with gr.Blocks(
-    theme=gr.themes.Soft(
-        primary_hue="orange",
-        secondary_hue="orange",
-        neutral_hue="stone",
-    ),
-    css=CSS,
     title="AI Website Summarizer",
 ) as app:
 
@@ -199,4 +194,16 @@ with gr.Blocks(
 
 
 if __name__ == "__main__":
-    app.launch()
+    port = int(os.environ.get("PORT", 7860))
+
+    app.launch(
+        server_name="0.0.0.0",
+        server_port=port,
+        theme=gr.themes.Soft(
+            primary_hue="orange",
+            secondary_hue="orange",
+            neutral_hue="stone",
+        ),
+        css=CSS,
+    )
+

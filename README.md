@@ -79,6 +79,9 @@ The application can be deployed as a Render Web Service using GitHub integration
 
 Configure the environment variables in Render rather than uploading the `.env` file.
 
+## Demo
+https://github.com/user-attachments/assets/ca840e0c-65fb-41d6-bdac-4af0a6065722
+
 ## License
 
 MIT
